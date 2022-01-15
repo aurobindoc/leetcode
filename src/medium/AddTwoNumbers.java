@@ -51,25 +51,26 @@ public class AddTwoNumbers {
 
         int rem = 0;
         int res = 0;
-        int val = 0;
         while (l1 != null && l2 != null) {
             res = rem + l1.val + l2.val;
-            val = res % 10;
-            tail.next = new ListNode(val);
+            tail.next = new ListNode(res % 10);
             rem = res / 10;
             l1 = l1.next;
             l2 = l2.next;
             tail = tail.next;
         }
-        if (l1 == null) {
-            l1 = l2;
-        }
         while (l1 != null) {
             res = rem + l1.val;
-            val = res % 10;
-            tail.next = new ListNode(val);
+            tail.next = new ListNode(res % 10);
             rem = res / 10;
             l1 = l1.next;
+            tail = tail.next;
+        }
+        while (l2 != null) {
+            res = rem + l2.val;
+            tail.next = new ListNode(res % 10);
+            rem = res / 10;
+            l2 = l2.next;
             tail = tail.next;
         }
         if (rem > 0) {
