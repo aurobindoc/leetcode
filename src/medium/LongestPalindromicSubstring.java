@@ -2,6 +2,8 @@ package medium;
 
 /**
  * Created by aurobindo.m on 17/01/22
+ *
+ * Problem: https://leetcode.com/problems/longest-palindromic-substring/
  */
 public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
