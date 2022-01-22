@@ -1,7 +1,6 @@
-package medium;
+package easy;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by aurobindo.m on 20/01/22
@@ -23,7 +22,7 @@ public class IntegerToRoman {
         int c;
         String rom = "";
         int div = 1000;
-        for (int i = 0; num > 0; ) {
+        while (num > 0) {
             c = num / div;
             if (c == 9) {
                 rom += map.get(div) + map.get(div * 10);
