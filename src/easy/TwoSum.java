@@ -2,7 +2,6 @@ package easy;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by aurobindo.m on 15/01/22
