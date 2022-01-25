@@ -1,47 +1,12 @@
 package medium;
 
+import utils.ListNode;
+
 /**
  * Created by aurobindo.m on 15/01/22
  * <p>
  * Problem: https://leetcode.com/problems/add-two-numbers/
  */
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    public static ListNode fromArray(int[] nums) {
-        ListNode head = new ListNode();
-        ListNode tail = head;
-
-        for (int i = 0; i < nums.length; i++) {
-            tail.next = new ListNode(nums[i]);
-            tail = tail.next;
-        }
-        return head.next;
-    }
-
-    public static void printList(ListNode l) {
-        System.out.print("[");
-        while (l != null && l.next != null) {
-            System.out.print(l.val + ", ");
-            l = l.next;
-        }
-        System.out.println(l.val + "]");
-    }
-}
 
 public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
