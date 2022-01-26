@@ -4,11 +4,12 @@ import easy.MergeTwoSortedLists;
 import utils.ListNode;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 /**
  * Created by aurobindo.m on 26/01/22
+ *
+ * Problem: https://leetcode.com/problems/merge-k-sorted-lists/submissions/
  */
 public class MergeKSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {
