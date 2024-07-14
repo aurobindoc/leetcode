@@ -42,7 +42,7 @@ public class TopKFrequentElement {
             }
         }
 
-        // Create a min heap of size k
+        // Create a min heap of size k from map
         PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.comparingInt(map::get));
 
         for (int i : map.keySet()) {
